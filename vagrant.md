@@ -12,4 +12,4 @@ mv <your_ova_file>.ova ../
 echo "{"provider": "virtualbox"}" > metadata.json
 tar xvf <your_ova_file>.ova
 ```
-`vagrant add you_title <your_ova_file>.ova`
+`vagrant add your_title <your_ova_file>.ova`
