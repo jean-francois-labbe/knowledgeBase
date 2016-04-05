@@ -1,18 +1,20 @@
 # Manage boxes
 
-### export vagrant managed box
-vagrant package
--> package.box
-
-## Add the package.box to vagrant box list
-
-vagrant box add superbox package.box
-
-## init a new box from a vagrant managed box
-mkdir mybox
-cd mybox
-vagrant init superbox
-
+**Export vagrant managed box**
+```bash
+$ vagrant package
+  package.box
+```
+**Add the package.box to vagrant box list**
+```bash
+$ vagrant box add superbox package.box
+```
+**Init a new box from a vagrant managed box**
+```bash
+$ mkdir mybox
+$ cd mybox
+$ vagrant init superbox
+```
 # Import an ova from virtualbox
 ## The "metadata.json" file for the box 'interop_base' was not found.
 
