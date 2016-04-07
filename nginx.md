@@ -1,5 +1,15 @@
 # locations
 
+```
+location optional_modifier location_match {
+  ...
+}
+
+location / {
+  try_files $uri $uri/ =404;
+}
+```
+
 * (none): If no modifiers are present, the location is interpreted as a prefix match. This means that the location given will be matched against the beginning of the request URI to determine a match.
 * =: If an equal sign is used, this block will be considered a match if the request URI exactly matches the location given.
 * ~: If a tilde modifier is present, this location will be interpreted as a case-sensitive regular expression match.
