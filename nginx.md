@@ -8,6 +8,11 @@ location optional_modifier location_match {
 location / {
   try_files $uri $uri/ =404;
 }
+
+location ^~ /EU-CAT {
+  ajp_pass localhost:8209;
+}
+
 ```
 
 * (none): If no modifiers are present, the location is interpreted as a prefix match. This means that the location given will be matched against the beginning of the request URI to determine a match.
